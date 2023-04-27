@@ -1,0 +1,359 @@
+/* CSS reset*/
+body, header, nav, footer, h1, div, img, ul
+{
+    margin:  0;
+    padding: 0;
+    border: 0;
+}
+
+body
+{
+    background-color: rgb(252, 251, 251);
+    
+}
+
+header
+{
+    background-color: rgb(50, 117, 168);
+    height: 15px;
+    padding: 7%;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 0;
+}
+
+header img
+{
+  margin: 0 auto;
+}
+
+nav
+{
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li
+{
+    font-size: 1.75em;
+    font-family: 'Send Flower', cursive;
+    border-top: 1px solid rgb(225, 36, 36);
+}
+
+li:first-child
+{
+    border-top: none;
+}
+
+nav li a
+{
+    display: block;
+    color: rgb(225, 36, 36);
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+p 
+{ color: #685206; 
+    font-family: 'Helvetica Neue', 
+    sans-serif; 
+    font-size: 20px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+    text-align: justify; 
+    text-justify: inter-word; 
+}
+
+img
+{
+    max-width: 100%;
+    display: block;
+}
+
+main
+{
+    /*clear: left;*/
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tel-link a
+{
+    color: rgb(225, 36, 36);
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+footer
+{
+    background-color: rgb(50, 117, 168);
+}
+footer p
+{
+    font-size: 0.75em;
+    text-align: center;
+    color: rgb(142, 207, 71);
+    padding: 0 1em;
+}
+
+footer p a
+{
+    color: rgb(142, 207, 71);
+    text-decoration: none;
+}
+
+.tel-link
+{
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#contact
+{
+    text-align: center;
+}
+
+#contact a
+{
+    color: #666600;
+    text-decoration: none;
+}
+
+.map
+{
+    border: 8px solid #000;
+}
+
+.skills
+{
+    margin-left: 10%;
+}
+
+.tablet-desktop
+{
+    display: none;
+}
+
+.mobile
+{
+    display: block;
+}
+
+#blackberry, #kiwi, #mango
+{
+    margin: 0 2%;
+}
+
+.center 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+.action
+{
+    font-size: 1.35;
+    color: rgb(225,36,36);
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 5px 5px 8px rgb(142, 207, 71);
+}
+
+#gradient-style
+{
+    clear: left;
+    border-radius: 1%;
+    border-top: 1px solid rgb(142, 207, 71);
+    border-bottom: 1px solid rgb(142, 207, 71);
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+    background-image: linear-gradient(to right, rgb(231, 159, 159), rgb(241,203,203));
+}
+
+#form
+{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:1px;
+    background-color:rgb(232, 113, 100) ;
+}
+
+
+@media screen and (min-width: 630px), print
+{
+
+    /* Table viewport: show tablet-desktop class, hide mobile class */
+    table th td
+    {
+        border: 1px solid;
+        border-color: red;
+    }
+    table th
+    {
+      background-color: rgb(50, 117, 168);  
+      color: white;
+    }
+    
+    table tr:nth-child(even)
+    {
+        background-color: rgb(176,
+        222, 116);
+    }
+
+    .frame
+    {
+        
+        position: relative;
+        max-width: 450px;
+        margin: 2% auto;
+
+    }
+    .box
+    {
+        position: relative;
+        border: 1px solid;
+    }
+    .pic-text
+    {
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        opacity: 50%;
+        color: white;
+        width: auto;
+        padding: 5px;
+        text-align: center;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+    .tablet-desktop
+    {
+        display: block;
+    }
+    
+    .mobile
+    {
+        display: none;
+    }
+    
+    header
+    {
+        position: static;
+        padding-bottom: 7%;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */ 
+    
+    nav li
+    {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child
+    {
+        border-right: none;
+    }
+    
+    nav li a
+    {
+        padding: 0.1em 0.75em;
+    }
+    
+    /* Tablet Viewport: Style rules for main content area */
+    
+    main ul
+    {
+        margin: 0 0 4% 10%;
+    
+    }
+    
+    .tel-num
+    {
+        font-size: 1.25em;
+        text-align: center;
+    }
+    
+    .map
+    {
+        width:600px;
+        height:450px;
+    }
+
+    @media screen and (min-width: 769px), print
+    {
+        /* Desktop Viewport: Style rule for header */ 
+        .grid
+        {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+        }
+        .frame
+        {
+            opacity: 0.9;
+        }
+        .frame:hover
+        {
+            opacity: 1;
+            box-shadow: 8px 8px 2px;
+            color: #808080;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        header a 
+        {
+            float: left;
+        }
+
+        nav li a 
+        {
+            color: rgb(142, 207, 71);
+        }
+
+        nav 
+        {
+            position: absolute;
+            left: 50%;
+            top: 10%;
+        }
+
+        nav li
+        {
+            border: none;
+        }
+        nav li:hover 
+        {
+            background-color: rgb(50, 117, 168);
+            border-radius: 10%;
+        }
+        nav li a:hover
+        {
+            color: rgb(244,9,9);
+        }
+    
+
+    }
+    
+    }
+    
